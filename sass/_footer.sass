@@ -1,0 +1,37 @@
+@import './base/_mixins'
+@import './base/_variable'
+.footer
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%)
+    padding: 50px
+    margin-top: 100px
+    color: $main-white
+    &__text
+        display: flex
+        justify-content: space-around
+        align-items: center
+        ul
+            list-style-type: none
+            display: flex
+            flex-direction: column
+            gap: 10px
+            li
+                font-size: 14px
+                color: $main-white
+                opacity: 0.8
+                &:first-child
+                    font-size: 20px
+                    opacity: 1
+    &__info
+        display: flex
+        flex-direction: column
+        width: 25%
+    &__descr
+        margin-top: 10px
+        opacity: 0.8
+    &__subtitle
+        margin-top: 30px
+        opacity: 0.8
+    .logo__circle
+        color: $hover-blue
+        background-color: $main-white
+        font-size: 26px

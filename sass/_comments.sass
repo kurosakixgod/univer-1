@@ -1,0 +1,66 @@
+@import './base/_mixins'
+@import './base/_variable'
+.comments
+    +container
+    margin-top: 150px
+
+    .divider
+        width: 50px
+        margin: 0 auto
+        margin-top: 30px    
+        background-color: $main-white
+
+    &__card
+        margin: 0 auto
+        width: 60%
+        background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%)
+        border-radius: 32px
+        padding: 50px 75px 30px 75px
+
+    &__img
+        border-radius: 100%
+    &__avatar
+        margin-top: 30px
+        display: flex
+        align-items: center
+        gap: 30px
+        .title
+            font-size: 24px
+            text-align: start
+    &__text
+        display: flex
+        align-items: center
+        gap: 100px
+    &__descr
+        color: $main-white
+    &__title
+        color: $main-white
+        text-align: center
+        font-size: 30px
+    &__subtitle
+        color: $main-white
+        opacity: 0.8
+    &__slider
+        margin: 0 auto
+        margin-top: 50px
+        width: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+    &__circles
+        display: flex 
+        gap: 20px  
+    &__circle
+        border-radius: 100%
+        width: 10px
+        height: 10px
+        background-color: #458FF6
+        opacity: 0.5
+        &:first-child
+            opacity: 1
+    &__arrow
+        &_left
+            margin-right: 50px
+            opacity: 0.5
+        &_right
+            margin-left: 50px

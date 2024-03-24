@@ -1,0 +1,42 @@
+@import './base/_mixins'
+@import './base/_variable'
+.article
+    +container
+    margin-top: 100px
+    .divider
+        margin: 0 auto
+        margin-top: 30px
+
+    &__title
+        text-align: center
+   
+    &__cards
+        margin: 0 auto
+        margin-top: 30px
+        width: 60%
+        display: flex
+        justify-content: center
+        gap: 30px
+    &__card
+        position: relative
+        min-height: 420px
+        width: 300px
+        border-radius: 16px
+        box-shadow: 10px 40px 50px 0px #E5E9F666
+        &_text
+            padding: 30px
+            
+        .title
+            font-size: 18px
+        .subtitle
+            margin-top: 10px
+            font-size: 14px
+
+    &__img
+        width: 100%
+        border-radius: 16px 16px 0 0
+    &__btn
+        margin: 0 auto
+        margin-top: 30px
+     
+     

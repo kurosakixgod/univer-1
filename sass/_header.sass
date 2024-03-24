@@ -1,0 +1,37 @@
+@import './base/_mixins'  
+@import './base/_variable'
+.header
+    padding-top: 40px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 22px
+    +container
+    .navbar
+        &__list
+            list-style-type: none
+            display: flex
+            gap: 35px
+            li
+                cursor: pointer
+                font-weight: 700
+                color: $main-gray
+                transition: 0.2s all
+                &:hover
+                    color: $main-black
+.hamburger
+    display: none
+    height: 50px
+    width: 25px
+    flex-direction: column
+    gap: 3px
+    cursor: pointer
+    &:hover
+        span
+            &:nth-child(2)
+                transform: translateX(10px)
+    span
+        transition: 0.3s all
+        display: block
+        height: 3px
+        background-color: $main-black
